@@ -1,6 +1,7 @@
 {
   "name": "aftar-ski",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "creator": "Coman Cosmin - https://cosmincoman.com",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -12,8 +13,17 @@
     "@next/font": "13.1.6",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
+    "framer-motion": "^9.0.2",
+    "hamburger-react": "^2.5.0",
     "next": "13.1.6",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
+    "react-snowfall": "^1.2.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.4"
   }
 }
