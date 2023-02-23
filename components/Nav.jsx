@@ -40,90 +40,95 @@ const Nav = () => {
               height: "100vh",
             }}
           />
-          <div className="flex items-center flex-col overflow-hidden">
+          <div className="flex items-center flex-col  h-screen overflow-hidden container-nav">
             <m.ul variants={container} initial="hidden" animate="show">
-              <div className="overflow-hidden">
-                <m.li variants={item} className="pb-2">
-                  <Link
-                    href={"/"}
-                    className="text-white block py-2 pt-16 hover:opacity-80"
-                    onClick={() => setOpen(!isOpen)}
-                  >
-                    ❅ Home
-                  </Link>
-                </m.li>
-              </div>
-              <div className="overflow-hidden">
-                <m.li variants={item} className="pb-2">
-                  <Link
-                    href={"/menu"}
-                    className="text-white block py-2  hover:opacity-80"
-                    onClick={() => setOpen(!isOpen)}
-                  >
-                    ❅ Menu
-                  </Link>
-                </m.li>
-              </div>
-              <div className="overflow-hidden">
-                <m.li variants={item} className="pb-2">
-                  <Link
-                    href={"/season-2023"}
-                    className="text-white block py-2  hover:opacity-80"
-                    onClick={() => setOpen(!isOpen)}
-                  >
-                    ❅ Season <strong>2023</strong>
-                  </Link>
-                </m.li>
-              </div>
-              <div className="overflow-hidden hidden">
-                <m.li variants={item} className="pb-2">
-                  <Link
-                    href={"/contact"}
-                    className="text-white block py-2  hover:opacity-80"
-                    onClick={() => setOpen(!isOpen)}
-                  >
-                    ❅ Contact
-                  </Link>
-                </m.li>
-              </div>
-              <div className="overflow-hidden">
-                <m.li variants={item} className="pb-2 ">
-                  <Link
-                    href={"/live-cam"}
-                    className="text-white block py-2  hover:opacity-80 "
-                    onClick={() => setOpen(!isOpen)}
-                  >
-                    ❅ Live Cam
-                  </Link>
-                </m.li>
-              </div>
-
-              <div className="overflow-hidden">
-                <m.li variants={item} className="pb-2 ">
-                  <div className="flex pt-96 gap-6">
+              <div className="links">
+                <div className="overflow-hidden">
+                  <m.li variants={item} className="pb-2">
                     <Link
-                      href="https://www.facebook.com/aftarski"
-                      className="px-3 text-white hover:text-gray-500"
-                      target="_blank"
+                      href={"/"}
+                      className="text-white block py-2 pt-16 hover:opacity-80"
+                      onClick={() => setOpen(!isOpen)}
                     >
-                      <FaFacebook className="fa-2x" />
+                      ❅ Home
                     </Link>
+                  </m.li>
+                </div>
+                <div className="overflow-hidden">
+                  <m.li variants={item} className="pb-2">
                     <Link
-                      href="https://www.instagram.com/aftarski/"
-                      className="px-3 text-white hover:text-gray-500"
-                      target="_blank"
+                      href={"/menu"}
+                      className="text-white block py-2  hover:opacity-80"
+                      onClick={() => setOpen(!isOpen)}
                     >
-                      <FaInstagram className="fa-2x" />
+                      ❅ Menu
                     </Link>
+                  </m.li>
+                </div>
+                <div className="overflow-hidden">
+                  <m.li variants={item} className="pb-2">
                     <Link
-                      href="https://www.youtube.com/@aftarskiwebcamspoianabraso4002"
-                      className="px-3 text-white hover:text-gray-500"
-                      target="_blank"
+                      href={"/season-2023"}
+                      className="text-white block py-2  hover:opacity-80"
+                      onClick={() => setOpen(!isOpen)}
                     >
-                      <FaYoutube className="fa-2x" />
+                      ❅ Season <strong>2023</strong>
                     </Link>
-                  </div>
-                </m.li>
+                  </m.li>
+                </div>
+                <div className="overflow-hidden hidden">
+                  <m.li variants={item} className="pb-2">
+                    <Link
+                      href={"/contact"}
+                      className="text-white block py-2  hover:opacity-80"
+                      onClick={() => setOpen(!isOpen)}
+                    >
+                      ❅ Contact
+                    </Link>
+                  </m.li>
+                </div>
+                <div className="overflow-hidden">
+                  <m.li variants={item} className="pb-2 ">
+                    <Link
+                      href={"/live-cam"}
+                      className="text-white block py-2  hover:opacity-80 "
+                      onClick={() => setOpen(!isOpen)}
+                    >
+                      ❅ Live Cam
+                    </Link>
+                  </m.li>
+                </div>
+              </div>
+            </m.ul>
+            <m.ul>
+              <div className="social-media -mt-36">
+                <div className="overflow-hidden">
+                  <m.li variants={item} className="pb-2 ">
+                    <div className="flex gap-6">
+                      <Link
+                        href="https://www.facebook.com/aftarski"
+                        className="px-3 text-white hover:text-gray-500"
+                        target="_blank"
+                      >
+                        <FaFacebook className="fa-2x" />
+                      </Link>
+                      <Link
+                        href="https://www.instagram.com/aftarski/"
+                        className="px-3 text-white hover:text-gray-500"
+                        target="_blank"
+                      >
+                        <FaInstagram className="fa-2x" />
+                      </Link>
+                      <Link
+                        href="https://www.youtube.com/@aftarskiwebcamspoianabraso4002"
+                        className="px-3 text-white hover:text-gray-500"
+                        target="_blank"
+                      >
+                        <FaYoutube className="fa-2x" />
+                      </Link>
+                    </div>
+                  </m.li>
+                </div>
               </div>
             </m.ul>
           </div>
