@@ -6,6 +6,7 @@ import { item, container } from "@/animation";
 import { motion as m } from "framer-motion";
 import Image from "next/image";
 import logoImage from "../images/logo-image.jpg";
+import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Nav = () => {
   const [isOpen, setOpen] = useState(false);
@@ -30,7 +31,7 @@ const Nav = () => {
         <h1 className="text-white text-sm font-bold">Live CAM </h1>
       </Link>
       {isOpen && (
-        <div className="absolute left-0 top-0 bg-custom-black p-4 w-full h-full lg:w-96 text-3xl z-25">
+        <div className="absolute left-0 top-0 bg-custom-black p-4 w-full min-h-full full-black lg:w-96 text-3xl z-25">
           <Snowfall
             snowflakeCount={50}
             style={{
@@ -39,7 +40,7 @@ const Nav = () => {
               height: "100vh",
             }}
           />
-          <div className="flex items-center flex-col">
+          <div className="flex items-center flex-col overflow-hidden">
             <m.ul variants={container} initial="hidden" animate="show">
               <div className="overflow-hidden">
                 <m.li variants={item} className="pb-2">
@@ -94,6 +95,34 @@ const Nav = () => {
                   >
                     ❅ Live Cam
                   </Link>
+                </m.li>
+              </div>
+
+              <div className="overflow-hidden">
+                <m.li variants={item} className="pb-2 ">
+                  <div className="flex pt-96 gap-6">
+                    <Link
+                      href="https://www.facebook.com/aftarski"
+                      className="px-3 text-white hover:text-gray-500"
+                      target="_blank"
+                    >
+                      <FaFacebook className="fa-2x" />
+                    </Link>
+                    <Link
+                      href="https://www.instagram.com/aftarski/"
+                      className="px-3 text-white hover:text-gray-500"
+                      target="_blank"
+                    >
+                      <FaInstagram className="fa-2x" />
+                    </Link>
+                    <Link
+                      href="https://www.youtube.com/@aftarskiwebcamspoianabraso4002"
+                      className="px-3 text-white hover:text-gray-500"
+                      target="_blank"
+                    >
+                      <FaYoutube className="fa-2x" />
+                    </Link>
+                  </div>
                 </m.li>
               </div>
             </m.ul>

@@ -1,4 +1,5 @@
 import ImagesGrid from "@/components/ImagesGrid";
+import Parallax from "@/components/Parallax";
 
 export default function Season2023() {
   return (

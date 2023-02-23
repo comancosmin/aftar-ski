@@ -21,7 +21,7 @@ const Footer = () => (
           <FaInstagram className="fa-2x" />
         </Link>
         <Link
-          href="https://www.youtube.com/watch?v=Qd1hEhbFa2A&ab_channel=AftarskiWebcamsPoianaBrasovGo"
+          href="https://www.youtube.com/@aftarskiwebcamspoianabraso4002"
           className="px-3 text-white hover:text-gray-500"
           target="_blank"
         >

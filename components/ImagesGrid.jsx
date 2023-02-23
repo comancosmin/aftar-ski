@@ -19,6 +19,7 @@ function ImagesGrid() {
               alt={image.alt}
               width={400}
               height={300}
+              style={{ objectFit: "cover", objectPosition: "center" }}
               key={index}
             />
           </div>

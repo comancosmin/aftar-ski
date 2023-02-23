@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
-import imageBus from "../images/website-images/DSC_1591.jpg";
-import imageHouse from "../images/website-images/DSC_1544.jpg";
-import imagePub from "../images/website-images/DSC_1672.jpg";
+import imageBus from "../images/index-images/bus.jpg";
+import imageHouse from "../images/index-images/grajd.jpg";
+import imagePub from "../images/index-images/pub.jpg";
 
 export default function Home() {
   return (
@@ -22,15 +22,14 @@ export default function Home() {
           <p className="flex justify-center tracking-widest uppercase text-xs py-2">
             Welcome to AftarSki
           </p>
-          <h1 className="flex justify-center text-4xl font-bold text-center pb-0">
+          <h1 className="flex justify-center text-4xl font-bold text-center">
             It&rsquo;s all about snow, ski and smiles.
           </h1>
         </div>
-        <div className="text-white -mt-28">
-          <h1 className="flex justify-center text-3xl font-bold text-center pb-8">
-            About us
-          </h1>
-        </div>
+        <div className="text-white -mt-40"></div>
+        <h1 className="flex justify-center text-3xl font-bold text pb-8">
+          Our places
+        </h1>
         <div className="lg:flex lg:flex-col lg:items-center text-white">
           <p className="flex justify-start tracking-wide uppercase text-xsm">
             music, good vibe at..
@@ -49,7 +48,7 @@ export default function Home() {
             the best hot wine at..
           </p>
           <h1 className="flex justify-start text-2xl font-bold text-center">
-            the log house
+            the stable
           </h1>
           <Image
             src={imageHouse}
@@ -70,6 +69,22 @@ export default function Home() {
             className="rounded-3xl h-52 lg:h-2/6 w-full my-4 lg:w-4/5"
           />
         </div>
+        <h1 className="flex justify-center text-3xl font-bold text">
+          About us
+        </h1>
+        <p className="text-xl lg:px-20 py-8 lg:font-semibold text-justify ">
+          Aftarski din Poiana Brașov este un loc perfect pentru a vă relaxa după
+          o zi plină de schi sau de plimbări pe munte. Oferta sa variată de
+          băuturi rafinate și atmosfera sa prietenoasă vă vor face să vă simțiți
+          ca acasă.
+        </p>
+        <p className="text-xl lg:px-20 lg:font-semibold text-justify pb-8">
+          Situat în inima orașului Poiana Brașov, locul acesta oferă o
+          priveliște superbă a munților și este perfect pentru a vă întâlni cu
+          prietenii sau pentru a vă relaxa într-un mediu confortabil. Vizitați
+          barul din Poiana Brașov pentru a vă bucura de o experiență relaxantă
+          după o zi plină de aventură în munte.
+        </p>
       </main>
     </>
   );
