@@ -30,6 +30,7 @@ module.exports = {
     extend: {
       colors: {
         "custom-black": "#101010",
+        "custom-opacity": "#f1f1f110",
       },
       fontFamily: {
         poppins: "poppins",

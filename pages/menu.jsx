@@ -2,10 +2,14 @@ import Image from "next/image";
 import firstImage from "/images/image-1.jpg";
 import secondImage from "/images/image-2.jpg";
 import thirdImage from "/images/pachete-sky.jpg";
+import Head from "next/head";
 
 export default function Menu() {
   return (
     <>
+      <Head>
+        <title>Aftarski | Menu</title>
+      </Head>
       <section id="menu">
         <div className="text-white py-5">
           <p className="flex justify-center tracking-wider uppercase text-[0.9rem]">
